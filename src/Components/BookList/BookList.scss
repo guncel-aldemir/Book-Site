@@ -1,0 +1,175 @@
+@use "../../Style/" as *;
+.row-booklist {
+  display: flex;
+  .booklists {
+    @include display-column;
+    padding: 3rem 40px;
+    & > a {
+      font-family: $rubik-font;
+      font-size: 20px;
+      font-weight: 700;
+      color: $pink-color;
+      &:hover{
+        color: $purple-color;
+      }
+    }
+    .booklists-title {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: $rubik-font;
+      color: $general-color;
+    }
+    .booklists-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      .container-book-item {
+        .row-book-item {
+          display: flex;
+
+          .book-item-card {
+            @include display-column;
+            background-color: $grey-color;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
+            transition: var(--transition);
+
+            &:hover {
+              box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            }
+            .book-item-img {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              & > img {
+                width: 200px;
+                margin-right: auto;
+                margin-left: auto;
+                height: 300px;
+              }
+            }
+            .book-item-info {
+              margin-top: 2rem;
+              @include display-column;
+              & > a {
+                color: $general-color;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: $rubik-font;
+                &:hover{
+                    color:$purple-color;
+
+                }
+              }
+              .book-item-author {
+                font-weight: 500;
+                font-family: $rubik-font;
+                font-size: 20px;
+                line-height: 1.4;
+                margin-bottom: 0.8rem;
+                @include display-column;
+                .author {
+                  color: $purple-color;
+                }
+                .author-name {
+                  padding-left: 5px;
+                  color: $general-color;
+                }
+              }
+              .book-item-edition-info {
+                font-weight: 500;
+                font-family: $rubik-font;
+                font-size: 20px;
+                line-height: 1.4;
+                @include display-column;
+                .total-edition {
+                  color: $purple-color;
+                }
+              }
+              .book-item-publish-year {
+                font-weight: 500;
+                font-family: $rubik-font;
+                font-size: 20px;
+                line-height: 1.4;
+                font-style: italic;
+                @include display-column;
+                .publish-year {
+                  color: $purple-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .row-booklist {
+    display: flex;
+    .booklists {
+      padding: 3rem 20px;
+
+      .booklists-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .row-booklist {
+    display: flex;
+    .booklists {
+      padding: 3rem 10px;
+
+      .booklists-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 412px) and (max-width: 575.9px) {
+  .row-booklist {
+    display: flex;
+    .booklists {
+      padding: 3rem 10px;
+
+      .booklists-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 375px) and (max-width: 411.9px) {
+  .row-booklist {
+    display: flex;
+    .booklists {
+      padding: 3rem 5px;
+
+      .booklists-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 270px) and (max-width: 374.9px) {
+  .row-booklist {
+    display: flex;
+    .booklists {
+      padding: 3rem 5px;
+
+      .booklists-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+  }
+}

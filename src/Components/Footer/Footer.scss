@@ -1,0 +1,102 @@
+@use "../../Style/"as *;
+
+.footer-container{
+    background-color: rgba(238, 156, 167, .2);
+    .footer{
+        @include display-column;
+        align-items: center;
+        height: 20vh;
+        .footer-text{
+            @include display-column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            .Contact{
+                font-weight: 700;
+                font-family: $rubik-font;
+                font-size: 20px;
+            }
+            .message{
+                font-weight: 700;
+                font-family: $rubik-font;
+                font-size: 20px;
+                color: $purple-color;
+            }
+        }
+    }
+}
+@media (min-width:376px) and (max-width:415px){
+   .footer-container{
+    display: flex;
+    .footer{
+        display: flex;
+        .footer-text{
+            display: flex;
+            .Contact{
+                font-size: 15px;
+            }
+            .message{
+                font-size: 15px;
+            }
+        }
+    }
+   }
+    
+}
+@media (min-width:321px) and (max-width:375.9px){
+    .footer-container{
+     display: flex;
+     .footer{
+         display: flex;
+         margin-top: 45px;
+         .footer-text{
+             display: flex;
+             .Contact{
+                 font-size: 12px;
+             }
+             .message{
+                 font-size: 12px;
+             }
+         }
+     }
+    }
+     
+ }
+ @media (min-width:281px) and (max-width:320.9px){
+    .footer-container{
+     display: flex;
+     .footer{
+         display: flex;
+         margin-top: 100px;
+         .footer-text{
+             display: flex;
+             .Contact{
+                 font-size: 12px;
+             }
+             .message{
+                 font-size: 12px;
+             }
+         }
+     }
+    }
+     
+ }
+ @media (min-width:220px) and (max-width:280.9px){
+    .footer-container{
+     display: flex;
+     .footer{
+         display: flex;
+         margin-top: 50px;
+         .footer-text{
+             display: flex;
+             .Contact{
+                 font-size: 11px;
+             }
+             .message{
+                 font-size: 12px;
+             }
+         }
+     }
+    }
+     
+ }

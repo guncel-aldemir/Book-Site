@@ -1,0 +1,155 @@
+@use "../../Style/" as *;
+.container-purchase{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .row-purchase{
+      
+        .purchase{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 500px;
+            background-color: $grey-color;
+            border-radius: 10px;
+            .purchase-exit{
+                display: flex;
+                justify-content: flex-end;
+                &>img{
+                    width: 36px;
+                }
+              
+            }
+            .purchase-form{
+                @include display-column;
+                margin-top: 50px;
+                margin-left:40px;
+                font-family: $rubik-font;
+               
+                &>.number{
+                    padding: 0;
+                    width: max-content;
+                }
+                &>input{
+                    width: 100%;
+                }
+                &>.address{
+                    padding: 50px 4rem;
+                }
+               
+            }
+           
+            .btnDisabled{
+                background-color: gray;
+                width: max-content;
+                margin: 10px auto;
+                color: $white-color;
+              }
+              .rButton{
+                
+                background-color: $purple-color;
+                width: max-content;
+                margin: 10px auto;
+                color: $white-color;
+
+            }
+        }
+    }
+    
+}
+@media (min-width:321px) and (max-width:380px){
+   .container-purchase{
+    display: flex;
+    .row-purchase{
+        display: flex;
+        .purchase{
+            display: flex;
+            width: 350px;
+            .purchase-exit{
+                &>img{
+                    width: 24px;
+                }
+             }
+            .purchase-form{
+                margin-left: 0;
+                &>.address{
+                    padding-left: 0;
+                }
+            }
+            .btnDisabled{
+                padding: 3px;
+            }
+            .rButton{
+                padding: 3px;
+            }
+        }
+    }
+   }
+    
+}
+@media (min-width:281px) and (max-width:320px){
+    .container-purchase{
+     display: flex;
+     .row-purchase{
+         display: flex;
+         .purchase{
+             display: flex;
+             width: 300px;
+             .purchase-exit{
+                &>img{
+                    width: 24px;
+                }
+             }
+             .purchase-form{
+                 margin-left: 0;
+                 &>.address{
+                     padding-left: 0;
+                 }
+             }
+             .btnDisabled{
+                padding: 3px;
+            }
+             .rButton{
+                 padding: 3px;
+             }
+         }
+     }
+    }
+     
+ }
+ @media (min-width:220px) and (max-width:280px){
+    .container-purchase{
+     display: flex;
+     .row-purchase{
+         display: flex;
+         .purchase{
+             display: flex;
+             width: 230px;
+             .purchase-exit{
+                &>img{
+                    width: 24px;
+                }
+             }
+             .purchase-form{
+                 margin-left: 0;
+                 &>.address{
+                     padding-left: 0;
+                 }
+             }
+             .btnDisabled{
+                padding: 1px;
+            }
+             .rButton{
+                 padding: 1px;
+             }
+         }
+     }
+    }
+     
+ }

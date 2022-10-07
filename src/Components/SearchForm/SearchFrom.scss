@@ -1,0 +1,119 @@
+@use "../../Style/" as *;
+.row-searchform {
+  @include display-row;
+  justify-content: center;
+  margin-top: 30px;
+  .search-form {
+    width: 100%;
+    max-width: 680px;
+    .search-form-items {
+      display: flex;
+
+      .form-control {
+        font-size: 1rem;
+        padding: 0.6rem;
+        font-family: $rubik-font;
+        font-weight: 400;
+        border: none;
+        border-radius: 0;
+        &::placeholder {
+          opacity: 0.8;
+        }
+      }
+      .submit-btn {
+        background-color: $white-color;
+        border: none;
+      }
+    }
+  }
+}
+@media (min-width:576px) and (max-width:768px){
+  .row-searchform{
+    display: flex;
+    .search-form{
+        width: 100%;
+  
+        display: flex;
+      justify-content: center;
+        .search-form-items{
+            display: flex;
+            width: 100%;
+            .form-control{
+                padding: 0.4rem;
+            }
+        }
+    }
+  }
+}
+@media (min-width:414px) and (max-width:575.9px){
+    .row-searchform{
+      display: flex;
+      .search-form{
+          width: 100%;
+    
+          display: flex;
+        justify-content: center;
+          .search-form-items{
+              display: flex;
+              width: 100%;
+              .form-control{
+                  padding: 0.2rem;
+              }
+          }
+      }
+    }
+  }
+  @media (min-width:375px) and (max-width:413.9px){
+    .row-searchform{
+      display: flex;
+      .search-form{
+          width: 100%;
+    
+          display: flex;
+        justify-content: center;
+          .search-form-items{
+              display: flex;
+              width: 100%;
+              .form-control{
+                  padding: 0.2rem;
+              }
+          }
+      }
+    }
+  }
+  @media (min-width:319px) and (max-width:374.9px){
+    .row-searchform{
+      display: flex;
+      .search-form{
+          width: 100%;
+    
+          display: flex;
+        justify-content: center;
+          .search-form-items{
+              display: flex;
+              width: 100%;
+              .form-control{
+                  padding: 0.2rem;
+              }
+          }
+      }
+    }
+  }
+  @media (min-width:270px) and (max-width:318.9px){
+    .row-searchform{
+      display: flex;
+      .search-form{
+          width: 100%;
+    
+          display: flex;
+        justify-content: center;
+          .search-form-items{
+              display: flex;
+              width: 100%;
+              .form-control{
+                  padding: 0.2rem;
+              }
+          }
+      }
+    }
+  }

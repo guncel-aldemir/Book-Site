@@ -1,0 +1,163 @@
+@use "../../Style/"as *;
+
+.about-container{
+    background-color: rgba(238, 156, 167, .2);
+    .about-row{
+        display: flex;
+        .about{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            
+            gap: 10px;
+          .about-img{
+            width: 50%;
+            &>img{
+                width: 100%;
+                border-radius: 10px;
+            }
+          }
+          .about-text{
+            @include display-column;    
+            justify-content: center;
+            .title{
+                font-family: $rubik-font;
+                font-weight: 700;
+                font-size: 30px;
+                margin-bottom: 40px;
+                
+            }
+            .text{
+                font-family: $rubik-font;
+                font-weight: 400;
+                font-size: 15px;
+                font-style: italic;
+            }
+          }
+           
+        }
+    }
+}
+@media (min-width:576px) and (max-width:767.9px){
+    .about-container{
+        display: flex;
+        .about-row{
+            display: flex;
+            .about{
+                @include display-column;
+                margin-top: 10px;
+                height:70vh;
+                align-items: center;
+                
+                .about-text{
+                    .title{
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:414px) and (max-width:575.9px){
+    .about-container{
+        display: flex;
+        .about-row{
+            display: flex;
+            .about{
+                @include display-column;
+                margin-top: 10px;
+                height:80vh;
+                align-items: center;
+                .about-img{
+                    width: 100%;
+                }
+                .about-text{
+                    .title{
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:375px) and (max-width:413.9px){
+    .about-container{
+        display: flex;
+        .about-row{
+            display: flex;
+            .about{
+                @include display-column;
+                margin-top: 10px;
+                height:80vh;
+                align-items: center;
+                .about-img{
+                    width: 100%;
+                }
+                .about-text{
+                    .title{
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:374.9px){
+    .about-container{
+        display: flex;
+        .about-row{
+            display: flex;
+            .about{
+                @include display-column;
+                margin-top: 10px;
+                height:80vh;
+                align-items: center;
+                .about-img{
+                    width: 100%;
+                }
+                .about-text{
+                    .title{
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:280px) and (max-width:319.9px){
+    .about-container{
+        display: flex;
+        .about-row{
+            display: flex;
+            .about{
+                @include display-column;
+                margin-top: 10px;
+                height:80vh;
+                align-items: center;
+                .about-img{
+                    width: 100%;
+                }
+                .about-text{
+                    .title{
+                        font-size: 20px;
+                    }
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
